@@ -4,7 +4,6 @@ import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Notification } from "./Notification/Notification";
 import  { Statistics } from "./Statistics/Statistics"
 
-
 export class App extends Component {
 
   state = {
@@ -23,15 +22,13 @@ export class App extends Component {
     
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
-    console.log(good + neutral + bad);
     return (good + neutral + bad);    
   };
   
   countPositiveFeedbackPercentage() {
     const totalFeedback = this.countTotalFeedback();
     return totalFeedback > 0 ? Math.round((this.state.good / totalFeedback) * 100) : 0;
-  };
-  
+  };  
   
   render() {
     

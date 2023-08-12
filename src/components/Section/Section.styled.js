@@ -5,7 +5,7 @@ export const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  margin: 15px auto;
+  margin: 75px auto;
   padding: 15px;
   width: 180px;
   border: 2px solid black;
